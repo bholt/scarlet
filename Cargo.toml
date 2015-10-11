@@ -1,0 +1,4 @@
+[package]
+name = "scarlet"
+version = "0.1.0"
+authors = ["Brandon Holt <bholt@cs.washington.edu>"]
