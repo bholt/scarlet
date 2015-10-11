@@ -1,0 +1,49 @@
+[root]
+name = "scarlet"
+version = "0.1.0"
+dependencies = [
+ "redis 0.5.1 (git+https://github.com/mitsuhiko/redis-rs.git)",
+]
+
+[[package]]
+name = "byteorder"
+version = "0.3.13"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "matches"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "redis"
+version = "0.5.1"
+source = "git+https://github.com/mitsuhiko/redis-rs.git#50db93b10b7f8465be1414507dc57e0ee0247d09"
+dependencies = [
+ "rustc-serialize 0.3.16 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sha1 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "url 0.2.37 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "rustc-serialize"
+version = "0.3.16"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "sha1"
+version = "0.1.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "byteorder 0.3.13 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "url"
+version = "0.2.37"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "matches 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "rustc-serialize 0.3.16 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
